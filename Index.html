@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LYRICAL - Stream and Download Movies</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>LYRICAL</h1>
+        <p>Stream and Download Movies & TV Series</p>
+        <nav>
+            <a href="#" onclick="navigate('/')">Home</a>
+            <a href="#" onclick="navigate('/genre/animation')">Animation</a>
+            <a href="#" onclick="navigate('/genre/action')">Action</a>
+            <a href="#" onclick="navigate('/genre/horror')">Horror</a>
+            <a href="#" onclick="navigate('/genre/comedy')">Comedy</a>
+            <a href="#" onclick="navigate('/genre/drama')">Drama</a>
+            <a href="#" onclick="navigate('/genre/sci-fi')">Sci-Fi</a>
+            <a href="#" onclick="navigate('/genre/thriller')">Thriller</a>
+        </nav>
+    </header>
+    
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search for movies or TV series...">
+        <button onclick="performSearch()">Search</button>
+    </div>
+    
+    <div id="page-title" class="page-title">Home - Trending Movies</div>
+    
+    <div id="suggestions" class="suggestions"></div>
+    <div id="results" class="results hidden"></div>
+    <div id="load-more" class="load-more hidden">
+        <button onclick="loadMore()">Load More</button>
+    </div>
+    
+    <div id="details" class="details hidden"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
